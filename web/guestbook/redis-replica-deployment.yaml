@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: redis-replica
 spec:
-  revisionHistoryLimit:
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: redis
